@@ -30,6 +30,10 @@ function App() {
     window.navigator.clipboard.writeText(password)
   },[password])
 
+  const generateRandomLetters = useCallback(()=>{
+    hi
+  },[])
+
   return (
     <>
     <div className="bg-neutral-500 m-10 p-4 rounded-xl" >
