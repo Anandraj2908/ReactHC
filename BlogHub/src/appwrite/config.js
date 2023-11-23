@@ -34,6 +34,7 @@ export class Service{
         } catch (error) {
             console.log("Appwrite service :: getCurrenUser :: error", error)
         }
+        return null
     }
 
     async updatePost(slug, {title, content, featuredImage, status}){
@@ -52,6 +53,7 @@ export class Service{
         } catch (error) {
             console.log("Appwrite service :: getCurrenUser :: error", error)
         }
+        return null
     }
 
     async deletePost(slug){
