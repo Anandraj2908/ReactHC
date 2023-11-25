@@ -1,4 +1,5 @@
 import { Client, Account, ID} from 'appwrite';
+import conf from '../conf/conf'
 
 export class AuthService{
     client = new Client();
@@ -38,7 +39,7 @@ export class AuthService{
     }
 
     //to check if anyone is loggedin or not
-    async getCurrentAccount(){
+    async getCurrentUser(){
         try {
             return await this.account.get();
         } catch (error) {
@@ -59,4 +60,4 @@ export class AuthService{
 
 const authService =  new AuthService();
 
-export default AuthService
+export default authService
