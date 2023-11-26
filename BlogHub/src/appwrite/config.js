@@ -135,5 +135,5 @@ export class Service{
 }
 
 
-const service = new service()
+const service = new Service()
 export default service
