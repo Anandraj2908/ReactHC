@@ -18,11 +18,11 @@ function Header() {
   const handelNewsSubmit = (e) => {
     e.preventDefault()
     const weatherApiKey=String(import.meta.env.VITE_WEATHER_API_KEY)
-    fetch(`https://newsapi.org/v2/everything?q=${searchInput}&sortBy=popularity&apiKey=${weatherApiKey}`).
-    then((response) => {
-      response.json()
-      }
-    )
+    const p = fetch(`https://newsapi.org/v2/everything?q=${searchInput}&sortBy=popularity&apiKey=${weatherApiKey}`)
+    p.then((res)=>res.json())
+    .then((data) => (
+      dispatch(getNews(data))
+    ))
     setSearchInput('')
   }
 
@@ -58,8 +58,3 @@ function Header() {
 }
 
 export default Header
-
-{/* <form onSubmit={handelQuoteSubmit} className='w-1/2 flex justify-center'>
-      <input type='text' value={searchInput} onChange={(e)=> setSearchInput(e.target.value)} className='bg-slate-100/20 rounded-xl p-2 ' placeholder='your Quotes..' />
-      <button type='submit' className='focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm  dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900 p-2 mx-2' >Add</button>
-      </form> */}
