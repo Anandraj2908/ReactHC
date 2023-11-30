@@ -8,3 +8,4 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 Redux boilerplate flowchart @ https://app.eraser.io/workspace/9MMNGWJlrXCcdaAiFuA5
+weather api: "https://newsapi.org/v2/everything?q=amazon&sortBy=popularity&apiKey="

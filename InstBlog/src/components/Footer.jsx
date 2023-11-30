@@ -9,7 +9,8 @@ function Footer() {
       </div>
       <div className='flex justify-between'>
         <NavLink to={"/"} className={({isActive}) => `mx-5 ${isActive ? "text-slate-200 text-decoration-line: underline" : "text-slate-800"}`}>Quotes</NavLink>
-        <NavLink to={"/Recepie"} className={({isActive}) => `mx-5 ${isActive ? "text-slate-200 text-decoration-line: underline" : "text-slate-800"}`}>Recepie</NavLink>
+        <NavLink to={"/recepie"} className={({isActive}) => `mx-5 ${isActive ? "text-slate-200 text-decoration-line: underline" : "text-slate-800"}`}>Recepie</NavLink>
+        <NavLink to={"/news"} className={({isActive}) => `mx-5 ${isActive ? "text-slate-200 text-decoration-line: underline" : "text-slate-800"}`}>News</NavLink>
       </div>
      
     </div>
