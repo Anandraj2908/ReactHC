@@ -3,10 +3,7 @@ import { useSelector } from 'react-redux'
 import Card from './Card'
 
 function Home() {
-    const blogs = useSelector(state => state.blogs)
-    console.log("THis")
-    console.log(blogs)
-    console.log("end")
+    const blogs = useSelector(state => state.blogReducer.blogs)
   return (
     <div className='h-full w-full flex justify-center content-center '>
       <div className='bg-slate-100/20 w-2/4 rounded-xl p-5 m-5 overflow-auto max-h-96'>
