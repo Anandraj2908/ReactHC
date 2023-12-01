@@ -8,9 +8,9 @@ function Footer() {
       Quotes - A react redux project by Anand Raj
       </div>
       <div className='flex justify-between'>
-        <NavLink to={"/"} className={({isActive}) => `mx-5 ${isActive ? "text-slate-200 text-decoration-line: underline" : "text-slate-800"}`}>Quotes</NavLink>
-        <NavLink to={"/recepie"} className={({isActive}) => `mx-5 ${isActive ? "text-slate-200 text-decoration-line: underline" : "text-slate-800"}`}>Recepie</NavLink>
-        <NavLink to={"/news"} className={({isActive}) => `mx-5 ${isActive ? "text-slate-200 text-decoration-line: underline" : "text-slate-800"}`}>News</NavLink>
+        <NavLink to={"/"} className={({isActive}) => `mx-5 ${isActive ? "text-slate-200 font-bold" : "text-slate-800"}`}>Quotes</NavLink>
+        <NavLink to={"/recepie"} className={({isActive}) => `mx-5 ${isActive ? "text-slate-200 font-bold" : "text-slate-800"}`}>Food</NavLink>
+        <NavLink to={"/news"} className={({isActive}) => `mx-5 ${isActive ? "text-slate-200 font-bold" : "text-slate-800"}`}>News</NavLink>
       </div>
      
     </div>

@@ -1,10 +1,10 @@
 import React from 'react'
-import { useSelector, useDispatch } from 'react-redux'
+import { useSelector } from 'react-redux'
 import NewsCard from './NewsCard'
 import { nanoid } from '@reduxjs/toolkit'
 
 function News() {
-    const newsList = useSelector(state => state.newsReducer)
+  const newsList = useSelector(state => state.newsReducer)
     
   if(newsList.newsList.articles){
     return (
