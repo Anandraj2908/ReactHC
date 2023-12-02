@@ -6,7 +6,7 @@ import { nanoid } from '@reduxjs/toolkit'
 function Recepie() {
   const recepie = useSelector(state => state.recepieReducer)
   console.log(recepie)
-  if(recepie.recepies){
+  if(recepie.recepies.results){
     return (
       <div className='h-full w-full flex flex-wrap  overflow-auto'>
           {
@@ -21,7 +21,7 @@ function Recepie() {
   else{
     return (
       <div className='h-full w-full  m-auto   overflow-auto'>
-          <h1 className='text-2xl font-semibold text-center text-gray-600'>Search for the Recepie</h1>
+          <h1 className='text-2xl font-semibold text-center text-gray-600'>Search for the food items</h1>
       </div>
     )
   }
